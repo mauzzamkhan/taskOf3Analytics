@@ -1,0 +1,42 @@
+.Lisitem {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid #C7C8C9;
+    border-left: none;
+    border-right: none;
+}
+
+.ItemInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #07090D;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+.time {
+    font-size: 12px;
+    line-height: 1.2;
+    color: #7D7D7D;
+    margin-left: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.description {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #07090D;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

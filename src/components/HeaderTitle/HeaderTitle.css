@@ -1,0 +1,29 @@
+.headerContainer {
+    padding: 24px 20px;
+    border-bottom: 1px solid #C7C8C9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+.headerTitle{
+    font-size: 18px;
+    font-weight: 500;
+    color: #07090D;
+    margin: 0;
+}
+.badgeContainer{
+    height: 28px;
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #C7C8C9;
+}
+.badgetext{
+    color: #07090D;
+    font-size: 14px;
+    margin: 0;
+
+}

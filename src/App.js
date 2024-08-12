@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Sidebar from "./components/SideBar";
+import { ColorModeProvider } from "./style/ColorModeContext";
+import ThemeWrapper from "./theme/ThemeWrapper";
+import Layout from "./style/Layout";
+import Dashboard from "./pages/dashboard/Index";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ColorModeProvider>
+      <ThemeWrapper>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route path="/" element={<Dashboard />} />
+            </Route>
+          </Routes>
+          {/* <div className="App">
+            app
+            <Sidebar />
+          </div> */}
+        </BrowserRouter>
+      </ThemeWrapper>
+    </ColorModeProvider>
   );
 }
 
