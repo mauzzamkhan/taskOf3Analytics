@@ -81,7 +81,6 @@ const Dashboard = () => {
           height: "calc(100dvh - 48px)",
         }}
       >
-      <h1>hi</h1>
         <Box
           display="flex"
           sx={{
